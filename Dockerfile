@@ -1,3 +1,7 @@
 FROM node:16.13.0
-RUN node index.js
+
+WORKDIR /app
+COPY . /app
+RUN npm start
+
 EXPOSE 6892
